@@ -20,7 +20,7 @@ export const portfolioData = {
   },
 
   cv: {
-    cvUrl: "/CV-Franco-Asinari.pdf",
+    cvUrl: "/cv-franco-asinari.pdf",
   },
 
   presentation: {
