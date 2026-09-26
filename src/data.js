@@ -287,7 +287,7 @@ Franco`,
       ],
     },
     {
-      name: "App de Proyectos Personales",
+      name: "Portfolio Personal — Presentación Profesional",
 
       description:
         "Portfolio personal desarrollado para presentar experiencia, proyectos y habilidades con un diseño moderno y enfocado en la conversión.",
@@ -295,13 +295,13 @@ Franco`,
       technologies: [
         "React",
         "Vite",
-        "CSS",
+        "Tailwind CSS",
         "Responsive Design",
       ],
 
       role: "Diseño, estructura y desarrollo completo del sitio personal.",
 
-      githubUrl: "https://github.com/Franasinari07",
+      githubUrl: "https://github.com/Franasinari07/Portfolio-dev",
 
       images: [
         "/mockup-login.png",
