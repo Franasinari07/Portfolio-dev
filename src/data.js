@@ -226,14 +226,89 @@ Franco`,
     role:
       "Desarrollo Full Stack (frontend, backend e integración con AWS)",
 
-    githubUrl: "https://github.com/PabloGomez05/Proyecto-Crombie",
+    githubUrl: "https://github.com/Franasinari07",
 
     images: [
-      "/mockup-login.png", 
+      "/mockup-login.png",
       "/mockup-dashboard.png",
-      "/mockup-qa-testing.png"
+      "/mockup-qa-testing.png",
     ],
   },
+
+  featuredProjects: [
+    {
+      name: "Proyecto de Autenticación — Crombie",
+
+      description:
+        "Sistema de autenticación desarrollado durante la experiencia profesional en Crombie, integrando frontend, backend y servicios en la nube.",
+
+      technologies: [
+        "React",
+        "Node.js",
+        "REST API",
+        "JWT",
+        "AWS S3",
+        "AWS Lambda",
+        "EC2",
+      ],
+
+      role:
+        "Desarrollo Full Stack (frontend, backend e integración con AWS)",
+
+      githubUrl: "https://github.com/Franasinari07",
+
+      images: [
+        "/mockup-login.png",
+        "/mockup-dashboard.png",
+        "/mockup-qa-testing.png",
+      ],
+    },
+    {
+      name: "Dashboard de Gestión — CRM",
+
+      description:
+        "Panel administrativo pensado para visualizar métricas, gestionar usuarios y centralizar procesos clave de una operación comercial.",
+
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "Charts",
+        "API REST",
+        "UX/UI",
+      ],
+
+      role: "Diseño y desarrollo del dashboard con foco en experiencia y métricas.",
+
+      githubUrl: "https://github.com/Franasinari07",
+
+      images: [
+        "/mockup-dashboard.png",
+        "/mockup-qa-testing.png",
+      ],
+    },
+    {
+      name: "App de Proyectos Personales",
+
+      description:
+        "Portfolio personal desarrollado para presentar experiencia, proyectos y habilidades con un diseño moderno y enfocado en la conversión.",
+
+      technologies: [
+        "React",
+        "Vite",
+        "CSS",
+        "Responsive Design",
+      ],
+
+      role: "Diseño, estructura y desarrollo completo del sitio personal.",
+
+      githubUrl: "https://github.com/Franasinari07",
+
+      images: [
+        "/mockup-login.png",
+        "/mockup-dashboard.png",
+      ],
+    },
+  ],
 
   github: {
     githubUsername: "Franasinari07",

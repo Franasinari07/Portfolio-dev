@@ -2,10 +2,25 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eef4ff;
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-strong: #ffffff;
+  --border-subtle: rgba(148, 163, 184, 0.22);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --cyan: #06b6d4;
+  --violet: #8b5cf6;
+}
+
+html.dark {
   --bg-primary: #05070f;
   --bg-secondary: #0a0f1e;
   --surface: #0d1326;
+  --surface-strong: #111827;
   --border-subtle: rgba(148, 163, 184, 0.12);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
   --cyan: #22d3ee;
   --violet: #a78bfa;
 }
@@ -17,6 +32,7 @@
 html,
 body {
   background-color: var(--bg-primary);
+  color: var(--text-primary);
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -202,6 +218,22 @@ button:focus-visible {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes projectSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-card {
+  animation: projectSlide 0.5s ease;
 }
 
 details > summary {
