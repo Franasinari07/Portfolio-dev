@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CoverLetter from "./components/CoverLetter";
 import About from "./components/About";
-import Skills from "./components/Skills";
+import Skills from "./components/skills";
 import EducationExperience from "./components/EducationExperience";
 import FeaturedProject from "./components/FeaturedProject";
 import GithubProjects from "./components/GithubProjects";
