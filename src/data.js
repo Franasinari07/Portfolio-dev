@@ -264,10 +264,10 @@ Franco`,
       ],
     },
     {
-      name: "Dashboard de Gestión — CRM",
+      name: "Web de Casamiento — Proyecto Personal",
 
       description:
-        "Panel administrativo pensado para visualizar métricas, gestionar usuarios y centralizar procesos clave de una operación comercial.",
+        "Sitio web para la organización de un casamiento,con QR para poder acceder al sitio, incluyendo imagenes subidas en el mismo casamiento usando la API de google drive y podiendo almacenar las mismas para verlas en cualquier momento.",
 
       technologies: [
         "React",
@@ -277,9 +277,9 @@ Franco`,
         "UX/UI",
       ],
 
-      role: "Diseño y desarrollo del dashboard con foco en experiencia y métricas.",
+      role: "Diseño y desarrollo del sitio web con foco en experiencia y funcionalidad.",
 
-      githubUrl: "https://github.com/Franasinari07",
+      githubUrl: "https://github.com/Franasinari07/Casamiento-Qr-web",
 
       images: [
         "/mockup-dashboard.png",
