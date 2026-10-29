@@ -10,42 +10,27 @@ export default function FeaturedProject() {
   const [showMockups, setShowMockups] = useState(false);
 
   useEffect(() => {
+    if (showMockups) {
+      return;
+    }
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % projects.length);
-      setShowMockups(false);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [projects.length]);
-
-  useEffect(() => {
-    setShowMockups(false);
-  }, [currentIndex]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (showMockups) {
-        setShowMockups(false);
-      }
-    };
-
-    if (showMockups) {
-      window.addEventListener("scroll", handleScroll, { passive: true });
-    }
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [showMockups]);
+  }, [projects.length, showMockups]);
 
   const currentProject = projects[currentIndex];
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    setShowMockups(false);
   };
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % projects.length);
+    setShowMockups(false);
   };
 
   return (
@@ -110,7 +95,7 @@ export default function FeaturedProject() {
             ))}
           </div>
 
-          {showMockups && currentProject.images?.length > 0 && (
+          {!currentProject.isPublic && showMockups && currentProject.images?.length > 0 && (
             <div className="mb-8 p-5 bg-slate-100 dark:bg-slate-950/80 rounded-xl border border-slate-200 dark:border-slate-800/80 shadow-2xl animate-fadeIn">
               <h4 className="text-xs font-bold text-slate-600 dark:text-slate-400 mb-4 uppercase tracking-wider">
                 Capturas del Sistema
@@ -139,7 +124,7 @@ export default function FeaturedProject() {
           )}
 
           <div className="flex flex-wrap gap-4 border-t border-slate-200 dark:border-slate-800/60 pt-6">
-            {currentProject.images?.length > 0 && (
+            {!currentProject.isPublic && currentProject.images?.length > 0 && (
               <button
                 type="button"
                 onClick={() => setShowMockups(!showMockups)}
@@ -184,7 +169,10 @@ export default function FeaturedProject() {
               key={`${project.name}-dot`}
               type="button"
               aria-label={`Ir al proyecto ${index + 1}`}
-              onClick={() => setCurrentIndex(index)}
+              onClick={() => {
+                setCurrentIndex(index);
+                setShowMockups(false);
+              }}
               className={`h-2.5 rounded-full transition-all ${
                 index === currentIndex ? "w-8 bg-cyan-500" : "w-2.5 bg-slate-300 hover:bg-slate-400 dark:bg-slate-600 dark:hover:bg-slate-400"
               }`}

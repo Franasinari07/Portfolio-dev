@@ -255,12 +255,10 @@ Franco`,
       role:
         "Desarrollo Full Stack (frontend, backend e integración con AWS)",
 
-      githubUrl: "https://github.com/Franasinari07",
+      githubUrl: "https://github.com/PabloGomez05/Proyecto-Crombie",
 
       images: [
-        "/mockup-login.png",
-        "/mockup-dashboard.png",
-        "/mockup-qa-testing.png",
+        
       ],
     },
     {
@@ -280,10 +278,10 @@ Franco`,
       role: "Diseño y desarrollo del sitio web con foco en experiencia y funcionalidad.",
 
       githubUrl: "https://github.com/Franasinari07/Casamiento-Qr-web",
+      isPublic: true,
 
       images: [
-        "/mockup-dashboard.png",
-        "/mockup-qa-testing.png",
+        "/hero.png",
       ],
     },
     {
@@ -302,6 +300,7 @@ Franco`,
       role: "Diseño, estructura y desarrollo completo del sitio personal.",
 
       githubUrl: "https://github.com/Franasinari07/Portfolio-dev",
+      isPublic: true,
 
       images: [
         "/mockup-login.png",
